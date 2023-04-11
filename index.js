@@ -60,5 +60,11 @@ function init() {
 });
 };
 
+//function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+    err ? console.error(err) : console.log('Success!, your Readme.md has been generated.'));
+  }
+
 // Function call to initialize app
 init();
