@@ -53,12 +53,7 @@ function init() {
         type: 'input',
         name: 'email',
         message: "Please provide your email.",
-    },     
-    {
-        type: 'input',
-        name: 'questions',
-        message: "Please provide your email.",
-    }, 
+    },
 ])
 }
 
