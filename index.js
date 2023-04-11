@@ -55,7 +55,10 @@ function init() {
         message: "Please provide your email.",
     },
 ])
-}
+.then((data) => {
+  writeToFile("README.md", generateMarkdown(data));
+});
+};
 
 // Function call to initialize app
 init();
