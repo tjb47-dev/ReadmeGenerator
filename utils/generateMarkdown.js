@@ -20,7 +20,24 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// function starts with an if statement that checks if a license was provided as input. If no license was provided, the function returns an empty string.
+function renderLicenseLink(license) {
+  if (!license) {
+    return ''; // Return empty string if no license provided
+  }
+
+  switch (license) {
+    case 'MIT':
+      return 'https://opensource.org/licenses/MIT';
+    case 'Apache 2.0':
+      return 'https://opensource.org/licenses/Apache-2.0';
+    case 'GNU GPL v3':
+      return 'https://www.gnu.org/licenses/gpl-3.0';
+    // Add additional cases for other licenses as needed
+    default:
+      return ''; // Return empty string if an unrecognized license is provided
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
