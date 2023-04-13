@@ -63,7 +63,6 @@ function generateMarkdown(data) {
 
   return `# ${data.title}
 
-${licenseSection}
 
 ## Description
 
@@ -98,6 +97,9 @@ ${data.contributing}
 ## License
 
 [${data.license}](${renderLicenseLink(data.license)})
+
+
+## Questions
 
 If you have any questions, please [contact me](mailto:${data.email}). You can also find me on [GitHub](https://github.com/${data.github}).`;
 }
